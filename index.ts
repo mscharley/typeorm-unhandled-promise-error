@@ -34,4 +34,5 @@ createConnection({
   await connection.close();
 }).catch((e) => {
   console.log(`Error creating connection: ${e}`);
+  process.exit(1);
 });
